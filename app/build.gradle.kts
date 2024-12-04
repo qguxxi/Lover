@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.synth.lover"
-        minSdk = 33
+        minSdk = 34
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -48,7 +48,12 @@ android {
 
 dependencies {
 
+implementation(libs.androidx.ui.text.google.fonts)
+    //   Phiên bản hiện tại material3_version
+    val material3_version = 1.2
+
     implementation(libs.androidx.core.ktx)
+    implementation("androidx.compose.material3:material3:$material3_version")
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
