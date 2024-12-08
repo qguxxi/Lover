@@ -49,9 +49,13 @@ android {
 dependencies {
 
 implementation(libs.androidx.ui.text.google.fonts)
-    //   Phiên bản hiện tại material3_version
-    val material3_version = 1.2
+    //  Splash Screen
+    implementation("androidx.core:core-splashscreen:1.0.0-beta02")
 
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+
+    //  Phiên bản hiện tại material3_version
+    val material3_version = 1.2
     implementation(libs.androidx.core.ktx)
     implementation("androidx.compose.material3:material3:$material3_version")
     implementation(libs.androidx.lifecycle.runtime.ktx)
